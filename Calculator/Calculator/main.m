@@ -12,6 +12,7 @@
 #import "NSObject+Calculation.h"
 
 #import "Calculater.h"
+#import "Singleton.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -44,6 +45,17 @@ int main(int argc, const char * argv[]) {
         }];
         
         NSLog(@"Calculater result = %ld, is equal: %d", calculater.result, equal);
+        
+        Singleton *s = [Singleton sharedInstance];
+        NSLog(@"s: %p", s);
+        Singleton *ss = [Singleton sharedInstance];
+        NSLog(@"ss: %p", ss);
+        Singleton *sss = [[Singleton alloc] init];
+        NSLog(@"sss: %p", sss);
+//        Singleton *copy = [sss copy]; // 没实现copy协议，会crash
+//        NSLog(@"copy: %p", copy);
+
+
 
     }
     return 0;

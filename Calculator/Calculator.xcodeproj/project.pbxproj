@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4BB73D24E522A2002FB487 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4BB73C24E522A2002FB487 /* Singleton.m */; };
 		EF51E8EC24DCE08700B33FF4 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = EF51E8EB24DCE08700B33FF4 /* Calculator.m */; };
 		EF51E8EF24DCE4EE00B33FF4 /* NSObject+Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF51E8EE24DCE4EE00B33FF4 /* NSObject+Calculation.m */; };
 		EF767F4E24DB970900B8C031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF767F4D24DB970900B8C031 /* main.m */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF4BB73B24E522A2002FB487 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		EF4BB73C24E522A2002FB487 /* Singleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		EF51E8EA24DCE08700B33FF4 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		EF51E8EB24DCE08700B33FF4 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		EF51E8ED24DCE4EE00B33FF4 /* NSObject+Calculation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculation.h"; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				EF51E8EB24DCE08700B33FF4 /* Calculator.m */,
 				EF767F5424DB972200B8C031 /* Calculater.h */,
 				EF767F5524DB972200B8C031 /* Calculater.m */,
+				EF4BB73B24E522A2002FB487 /* Singleton.h */,
+				EF4BB73C24E522A2002FB487 /* Singleton.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				EF767F4E24DB970900B8C031 /* main.m in Sources */,
 				EF767F5624DB972200B8C031 /* Calculater.m in Sources */,
 				EF51E8EF24DCE4EE00B33FF4 /* NSObject+Calculation.m in Sources */,
+				EF4BB73D24E522A2002FB487 /* Singleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

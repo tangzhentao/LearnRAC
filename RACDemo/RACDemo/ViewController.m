@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    _tom = Person.new;
+//    _tom = Person.new;X
     
 //    [RACObserve(_tom, age) subscribeNext:^(id  _Nullable x) {
 //        NSLog(@"x: %@", x);
@@ -36,11 +36,11 @@
 - (void)ding {
    // RACSignal使用步骤：
    // 1.创建信号 + (RACSignal *)createSignal:(RACDisposable * (^)(id<RACSubscriber> subscriber))didSubscribe
-   // 2.订阅信号,才会激活信号. - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock
+   // 2.订阅信号,才会激活信号. - (RACDisposableX *)subscribeNext:(void (^)(id x))nextBlock
    // 3.发送信号 - (void)sendNext:(id)value
    
    // RACSignal底层实现：
-   // 1.创建信号，首先把didSubscribe保存到信号中，还不会触发。
+   // 1.创建信号，首先把didSubscribe保存到(RACSignal)中，还不会触发。
    // 2.当信号被订阅，也就是调用signal的subscribeNext:nextBlock
    // 2.2 subscribeNext内部会创建订阅者subscriber，并且把nextBlock保存到subscriber中。
    // 2.1 subscribeNext内部会调用siganl的didSubscribe
